@@ -1,3 +1,4 @@
+require "spec_helper"
 # # Topics
 #
 # * functions
@@ -33,7 +34,7 @@
 #
 #
 
-require "calculator"
+require "./calculator"
 
 describe "add" do
   it "adds 0 and 0" do
