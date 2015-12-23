@@ -1,3 +1,5 @@
+require "spec_helper"
+
 # # Simon Says
 #
 # ## Topics
@@ -11,7 +13,7 @@
 # When you make the second `repeat` test pass, you might break the **first**
 #
 
-require "simon_says"
+require "./simon_says"
 
 describe "Simon says" do
   describe "echo" do
