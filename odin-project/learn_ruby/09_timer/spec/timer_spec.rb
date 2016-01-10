@@ -1,3 +1,4 @@
+require 'spec_helper.rb'
 # # Topics
 #
 # * classes
@@ -7,7 +8,7 @@
 #
 # # Timer
 
-require 'timer'
+require './timer'
 
 describe "Timer" do
   before(:each) do
