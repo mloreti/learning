@@ -1,3 +1,5 @@
+require "spec_helper"
+
 # # Topics
 #
 # * modules
@@ -17,7 +19,7 @@
 #
 #
 
-require "pig_latin"
+require "./pig_latin"
 
 describe "#translate" do
 
