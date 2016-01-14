@@ -38,6 +38,7 @@ describe "Timer" do
     it "should display 4000 seconds as 01:06:40" do
       @timer.seconds = 4000
       @timer.time_string.should == "01:06:40"
+      
     end
   end
 
