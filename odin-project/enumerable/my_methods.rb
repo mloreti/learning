@@ -77,6 +77,8 @@ end
 arr = [1,2,3,4]
 some_proc = Proc.new {|x| x * 2}
 
+
+# ----- Testing each method ----- #
 puts "My select: #{arr.my_select { |x| x > 1 }}"
 
 puts "My all?: #{arr.my_all? { |x| x > 1 }}"
