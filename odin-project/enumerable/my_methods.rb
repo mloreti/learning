@@ -50,7 +50,7 @@ module Enumerable
     result
   end
 
-  def my_map2(proc)
+  def my_map2(&proc)
     result = []
     self.my_each { |i| result.push(proc.call(i)) }
     result
@@ -75,7 +75,7 @@ module Enumerable
 end
 
 arr = [1,2,3,4]
-some_proc = Proc.new {|x| x * 2}
+some_proc = Proc.new {|x| x * 3 }
 
 
 # ----- Testing each method ----- #
@@ -91,7 +91,7 @@ puts "My count: #{arr.my_count { |x| x > 2 }}"
 
 puts "My map: #{arr.my_map { |x| x * 2 }}"
 
-puts "My map proc: #{arr.my_map2(some_proc)}"
+puts "My map proc: #{arr.my_map2(&some_proc)}"
 
 puts "My map: #{arr.my_map3 { |x| x * 2 }}"
 
